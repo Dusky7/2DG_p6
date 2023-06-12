@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>p6_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+        }
+        :root{
+            --color-primary:#5d59ae;
+            --color-secundary:#45009C;
+            --color-terciary:#241438;
+            --color-bg:#D1AFE1;
+            --color-black:#14013E;
+
+        }
+        .card_txt{
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            justify-content: baseline;
+            height: 100%;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            display: flex;
+            flex-basis: 26%;
+            flex-grow: 1;
+            flex-direction: column;
+            border: solid 0.2em var(--color-primary);
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card :nth-child(5) image{
+            object-position: bottom;
+
+        }
+        .card:nth-child(1) .card:nth-child(6){
+            flex: 2 2 50%;
+
+        }
+        .card:nth-child(3){
+            flex: 2 1 40%;
+        }
+        .card_img{
+            width: 100%;
+            height: 224px;
+        
+        }
+         
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .card_txt h1{
+            font-size: 1em;
+            padding: 0.2em;
+            flex-grow: 0;
+            font-family: 'Ubuntu';
+            font-style: italic;
+            font-weight: 900;
+            font-size: 20px;
+            color: var(--color-terciary);
+
+        
+        }
+        .card_txt h2{
+            font-family: 'Ubuntu';
+            font-style: normal;
+            padding: 0.5em;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-secundary);
+        }
+        .card_txt p{
+            font-weight: 100;
+            font-size: 1.25em;
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="/img/arte 2.jpg" alt="artsita">
+                </figure>
+                <header class="card_txt">
+                    <h1>Artista 1832-1860</h1>
+                    <h2>William Turner</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Sunt unde commodi reprehenderit, error optio amet consectetur, 
+                    eveniet, voluptas placeat veritatis ratione fugiat corrupti nostrum 
+                    dolore cupiditate officia tenetur officiis voluptatibus.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="/img/arte 1.jpg" alt="cuadro 1">
+                </figure>
+                <header class="card_txt">
+                     <h1>William Turner 1854</h1>
+                     <h2>Viento lluvia y mar</h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Sunt unde commodi reprehenderit, error optio amet consectetur, 
+                     eveniet, voluptas placeat veritatis ratione fugiat corrupti nostrum 
+                     dolore cupiditate officia tenetur officiis voluptatibus.</p>
+                </header>
+            </div> <div class="card">
+                <figure class="card_img">
+                    <img src="/img/3.jpg" alt="cuadro 2 ">
+                </figure>
+                <header class="card_txt">
+                    <h1>William Turner 1850</h1>
+                    <h2>La dadiva</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Sunt unde commodi reprehenderit, error optio amet consectetur, 
+                    eveniet, voluptas placeat veritatis ratione fugiat corrupti nostrum 
+                    dolore cupiditate officia tenetur officiis voluptatibus.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="/img/4.jpg" alt="cuadro 3 ">
+                </figure>
+                <header class="card_txt">
+                     <h1>William Turner 1855</h1>
+                     <h2>Desconocido</h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Sunt unde commodi reprehenderit, error optio amet consectetur, 
+                     eveniet, voluptas placeat veritatis ratione fugiat corrupti nostrum 
+                     dolore cupiditate officia tenetur officiis voluptatibus.</p>
+                </header>
+            </div> 
+            <div class="card">
+                <figure class="card_img">
+                    <img src="/img/5.jpg" alt="cuadro 4">
+                </figure>
+                <header class="card_txt">
+                    <h1>William turner 1848</h1>
+                    <h2>Descarga</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Sunt unde commodi reprehenderit, error optio amet consectetur, 
+                    eveniet, voluptas placeat veritatis ratione fugiat corrupti nostrum 
+                    dolore cupiditate officia tenetur officiis voluptatibus.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="/img/6.jpg" alt="cuadro 5">
+                </figure>
+                <header class="card_txt">
+                     <h1>William turner</h1>
+                     <h2>Carceles </h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Sunt unde commodi reprehenderit, error optio amet consectetur, 
+                     eveniet, voluptas placeat veritatis ratione fugiat corrupti nostrum 
+                     dolore cupiditate officia tenetur officiis voluptatibus.</p>
+                </header>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
